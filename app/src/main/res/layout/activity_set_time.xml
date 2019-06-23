@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".SetTimeActivity"
+    tools:layout_editor_absoluteY="25dp">
+
+    <TimePicker
+        android:id="@+id/sTime"
+        android:layout_width="169dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/list_background"
+        android:timePickerMode="spinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline2">
+
+    </TimePicker>
+
+    <TimePicker
+        android:id="@+id/eTime"
+        android:layout_width="169dp"
+        android:layout_height="189dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:timePickerMode="spinner"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/sTime"
+        app:layout_constraintTop_toTopOf="@+id/guideline2"
+        android:background="@drawable/list_background">
+
+    </TimePicker>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="272dp" />
+
+    <Button
+        android:id="@+id/timeSet"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/login_button_background"
+        android:fontFamily="@font/nunito_sans_bold"
+        android:text="Ayarla"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline3"
+        android:onClick="timeSet"/>
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="474dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="8dp"
+        android:text="Açılma zamanı"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Kapanma zamanı"
+        app:layout_constraintBottom_toTopOf="@+id/guideline2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.688"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="344dp"
+        android:layout_height="157dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="328dp"
+            android:layout_height="141dp"
+            android:orientation="vertical"
+            tools:layout_editor_absoluteX="8dp"
+            tools:layout_editor_absoluteY="8dp">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="85dp"
+                    android:layout_height="26dp"
+                    android:layout_marginBottom="8dp"
+                    android:fontFamily="@font/nunito_sans_light_italic"
+                    android:paddingLeft="10dp"
+                    android:text="Günler:"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:textColor="#000"
+                    android:textSize="20dp"/>
+            </android.support.constraint.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/pzt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/status_button"
+                    android:text="pzt"
+                    tools:layout_editor_absoluteX="255dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+
+                <Button
+                    android:id="@+id/sal"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/status_button"
+                    android:text="sal"
+                    tools:layout_editor_absoluteX="67dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+
+                <Button
+                    android:id="@+id/car"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/status_button"
+                    android:text="car"
+                    tools:layout_editor_absoluteX="213dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+
+                <Button
+                    android:id="@+id/per"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/status_button"
+                    android:text="per"
+                    tools:layout_editor_absoluteX="295dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+
+                <Button
+                    android:id="@+id/cum"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/status_button"
+                    android:text="cum"
+                    tools:layout_editor_absoluteX="164dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+
+                <Button
+                    android:id="@+id/cmt"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="5dp"
+                    android:background="@drawable/status_button"
+                    android:text="cmt"
+                    tools:layout_editor_absoluteX="116dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+
+                <Button
+                    android:id="@+id/paz"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/status_button"
+                    android:text="paz"
+                    tools:layout_editor_absoluteX="27dp"
+                    tools:layout_editor_absoluteY="173dp"
+                    android:onClick="selectDay"
+                    android:tag="0"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

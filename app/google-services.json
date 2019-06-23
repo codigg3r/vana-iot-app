@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "189796259618",
+    "firebase_url": "https://vana-6640a.firebaseio.com",
+    "project_id": "vana-6640a",
+    "storage_bucket": "vana-6640a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:189796259618:android:577806a7deaade0f",
+        "android_client_info": {
+          "package_name": "com.example.codigger.vana"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "189796259618-u06gc3fl6ga73m2ssevulu90jvh1kjqo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.codigger.vana",
+            "certificate_hash": "095ad8f47223d17ae55dcbcb2c843413da24df55"
+          }
+        },
+        {
+          "client_id": "189796259618-e0ti28m2bk68o7pvhinc09l1g0mff8oo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOqJ7P9mGhtLeHskxx6jOFMO5SdDcnhdM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "189796259618-e0ti28m2bk68o7pvhinc09l1g0mff8oo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
